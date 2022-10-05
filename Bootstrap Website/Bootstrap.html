@@ -1,0 +1,166 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger House</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootsrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Bootsrap Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    
+
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand text-danger" href="#">Burger House</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                More
+              </a>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item text-white" href="#menu">Menu</a>
+                <a class="dropdown-item text-white" href="#contact">Contact Us</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+      <section id="home">
+        <div id="add" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#add" data-slide-to="0" class="active"></li>
+            <li data-target="#add" data-slide-to="1"></li>
+            <li data-target="#add" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/1.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="images/2.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="images/3.jpg" class="d-block w-100">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-target="#add" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-target="#add" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </section>
+
+      <section id="menu">
+
+        <h1>Menu</h1>
+        <hr>
+
+        <div class="cate">
+          <div class="card" style="width: 18rem;">
+            <img src="images/veggie-burger.webp" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Black Bean Burgers</h5>
+              <p class="card-text">Rs. 109</p>
+              <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="images/salmon-burger.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Wild Salmon Burgers</h5>
+              <p class="card-text">Rs. 139</p>
+              <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="images/bison-burgers.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bison Burgers</h5>
+              <p class="card-text">Rs. 199</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cate">
+          <div class="card" style="width: 18rem;">
+            <img src="images/turkey-burger.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Turkey Burger</h5>
+              <p class="card-text">Rs. 209</p>
+              <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="images/pumpkin-veggie-burger.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Veggie Burger</h5>
+              <p class="card-text">Rs. 189</p>
+              <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="images/raw-portobello-burger.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Portobello Mushroom Burgers</h5>
+              <p class="card-text">Rs. 299</p>
+              <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="contact">
+
+        <div class="container">
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+              <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+              </a>
+              <span class="mb-3 mb-md-0 text-muted">&copy; 2022 HouseBurger.com</span>
+            </div>
+        
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+              <img src="icons/facebook.svg" width="30vh">
+              <img src="icons/instagram.svg" width="30vh">
+              <img src="icons/twitter.svg" width="30vh">
+            </ul>
+          </footer>
+        </div>
+            
+      </section>
+
+</body>
+</html>
