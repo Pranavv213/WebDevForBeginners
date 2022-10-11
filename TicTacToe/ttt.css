@@ -1,0 +1,18 @@
+body{
+    font-family: 'Brush Script MT',cursive,sans-serif;
+    color: rgb(44, 80, 201);
+    background-color: #f5f0e1;
+    text-align: center;
+}
+div{
+    text-align: center;
+}
+h1{
+    color: #1e3d59;
+    text-decoration: underline;
+}
+/* color: #1e3d59; 
+color: #f77119; 
+color: #19ec2a; */
+
+
