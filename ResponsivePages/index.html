@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width:720px)" href = "css/responsive.css" >
+  <title>Frontend Mentor | E-commerce product page</title>
+
+
+
+</head>
+<body>
+
+  <nav id="navbar" class="navbar">
+    <div id="logo">
+      <img  src="images/logo.svg" alt="">
+    </div>
+
+    <div class="menu">
+    <span class="hamburger iconLink" id = "hamburgerMenu">
+      <img  class = "img-resp" src= "images/hamburger.png" alt="">
+  </span>
+    <div class = "menuContainer">
+      <li><a href="#">Collections</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </div>
+  </div>
+    <div class="right">
+        <img class = "icon" src="images/icon-cart.svg" alt="">
+        <img class = "avatar" src="images/image-avatar.png " alt="">
+    </div>
+  </nav>
+
+  <div class="success-message none">
+    <p>Item Added To Cart Successfully.</p>
+    <div class="cross-btn">
+      <span class="bar bar1"></span>
+      <span class="bar bar2"></span>
+    </div>
+  </div>
+  <span class = "border"></span>
+ 
+
+  <section id="main">
+    <div id="preview">
+      <div class="main-img">
+        <img class  = "img-resp Thumbnail" src="images/1.jpg" alt="">
+      </div>
+      <div class="image-menu">
+        <img class = "small-img active" id = "1"src="images/s1.jpg" alt="">
+        <img class = "small-img" id = "2"src="images/s2.jpg" alt="">
+        <img class = "small-img" id = "3"src="images/s3.jpg" alt="">
+        <img class = "small-img" id = "4"src="images/s4.jpg" alt="">
+      </div>
+    </div>
+
+  
+
+    <div class="text">
+    <h4>Sneaker Company</h4>
+
+     <h1 class="main-heading">Fall Limited Edition Sneakers</h1>
+     <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+     durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+     <div class="price">
+      <span>$125.00</span>
+      <span class="small-icons">50%</span>
+     </div>
+  
+     <p class = "absolute-Value">$250.00</p>
+
+    <div class="cart">
+      <div class="cartAdd">
+      <img class = "add-icons small-icons" id = "subtract"src="images/icon-minus.svg" alt="">
+      <span class = "add-icons" id = "value">0</span> 
+      <img class = "add-icons small-icons" id = "add"src="images/icon-plus.svg" alt="">
+    </div>
+      <button class="btn" id = "addToCart">Add to cart</button>
+     </div>
+    </div>
+</div>
+</section>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="index.js"></script>
+</body>
+</html>
