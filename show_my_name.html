@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name on click</title>
+    <style>
+        body{background-image: linear-gradient(to bottom right, red, yellow); height:400px ;}
+        div{margin-top: 15em ;}
+        #btn{background:rgb(0, 191, 255);color:white; padding:2%;border-radius:25%;font-weight:bold;}
+        #btn:hover{background:rgb(20, 99, 209)}
+        #disp{color:white;}
+    </style>
+</head>
+<body>
+    <div>
+        <center>
+            <input type="button" onclick="myFunction()" id="btn" name="Prasanna" value="Show">
+            <h1 id="disp"></h1>
+        </center>
+    </div>
+    
+<script>
+function myFunction() {
+  var x = document.getElementById("btn").name;
+  document.getElementById("disp").innerHTML = x;
+}
+</script>
+</body>
+</html>
