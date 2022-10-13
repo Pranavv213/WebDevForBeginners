@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+#navbar{
+    /* border: 3px solid red; */
+    display: flex;
+    padding: 2rem 6rem 2.4rem;
+    align-items: center;
+}
+.border{
+    display: block;
+    height: 1px;
+    margin-left: 6rem;
+    width: 90vw;
+    color: grey;
+    background-color: grey;
+ }
+
+.menu-container{
+    display: flex;
+    margin-left: 2.4rem;
+    /* display: none; */
+}
+li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: gray;
+    /* border: 3px solid red; */
+    padding: 0rem 1rem;
+}
+.right{
+  /* border: 3px solid blue; */
+  position: absolute;
+  right: 6rem;
+  padding: 0rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.icon{
+    height: auto;
+    max-width: 100%;
+}
+.avatar{
+    max-width: 30%;
+    /* border: 3px solid saddlebrown; */
+}
+
+#main{
+    padding: 4rem 8rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+#preview{
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid green; */
+    width: 40%;
+}
+/* #main-img{
+    /* border: 3px solid red; */
+
+.img-resp{
+    height: auto;
+    max-width: 100%;
+    border-radius: 10%;
+}
+.image-menu{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    /* border: 3px solid red; */
+}
+
+.small-img{
+    /* border: 3px solid rebeccapurple; */
+    max-width: 20%;
+    border-radius: 10%;
+    /* transition: 0.4s all ease-in-out; */
+}
+.active{
+    opacity: 0.32;
+    border: 2px solid rgb(246, 124, 9);
+}
+
+.text{
+    /* border: 3px solid green; */
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+h4{
+    color: rgb(246, 124, 9);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-family: 8px;
+}
+
+.main-heading{
+    font-size: 33px;
+    /* border: 3px solid red; */
+    margin: 1.2rem 0rem;
+}
+p{
+    margin: 1.5rem 0rem;
+}
+.btn{
+    background-color: rgb(255, 115, 0);
+    color: white;
+    padding: 0.6rem 2.2rem;
+    border: none;
+    border-radius: 10px;
+    margin-left: 2rem;
+    /* border: 3px solid red; */
+}
+
+.small-icons{
+    background: rgb(255, 237, 222);
+    /* color: rgb(255, 115, 0); */
+    padding: 5px;
+}
+
+.cart{
+    display: flex;
+    align-items: center;
+    padding: 2rem 0rem;
+    /* border: 3px solid red; */
+}
+
+.absolute-Value{
+    text-decoration: line-through;
+    text-decoration-color: grey;
+    text-decoration-thickness: 4px;
+}
+
+.cartAdd{
+    /* border: 3px solid red; */
+    background-color: rgb(223, 223, 223);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10%;
+}
+
+.add-icons{
+    /* padding: 1rem  0.7rem; */
+    width: 60%;
+    padding: 0.6rem;
+    background-color: rgb(223, 223, 223);
+}
+
+
+.success-message{
+    /* border: 1px solid rgb(255, 115, 0); */
+    color: white;
+    text-align: center;
+    background-color: rgb(247, 156, 82);
+    color: rgb(0, 116, 0);
+    background: rgb(212, 252, 212);
+    border: 2px solid;
+    border-color: rgb(0, 116, 0);
+    position: absolute;
+    top: 0px;
+    right: 10%;
+    left: 5%;
+    font-size: 18px;
+}
+
+.success-message p{
+    width: 70%;
+}
+
+.cross-btn{
+    width: 45px;
+    /* border: 3px solid; */
+    position: absolute;
+    right: 4%;
+    top: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.bar1{
+    display: inline-block;
+    /* border: 3px solid black; */
+    transform: rotate(45deg);
+    height: 22px;
+    background-color: rgb(0, 116, 0);
+    width: 2px;
+}
+.bar2{
+    display: inline-block;
+    transform: rotate(-45deg);
+    background-color: rgb(0, 116, 0);
+    height: 22px;
+    width: 2px;
+}
+.none{
+    display: none;
+   transition: all 0.4s ease;
+
+}
+.visible{
+   display: block;
+   transition: all 0.7s ease-in-out;
+}
+
+.hamburger{
+    display: none;
+  }
+  .menuContainer{
+    display: flex;
+    padding-left: 2rem;
+  }
