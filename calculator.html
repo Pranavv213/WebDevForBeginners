@@ -1,0 +1,261 @@
+<html>
+	<head>
+			
+		<title>
+			 Web Calci
+		</title>
+		
+			
+        <style>
+			body
+			{
+				justify-content: center;
+			}
+			
+			#background
+			{
+				
+				height: 560px;
+				margin:20px 20px auto;
+				background-repeat: no-repeat;
+				background-size: cover;
+				border-radius: 25%;
+			}
+			
+			#calculator
+			{
+				padding-top: 20px;
+				padding-bottom: 20px;
+				padding-left: 20px;
+				padding-right: 20px;
+				width: 320px;
+				height: 530px;
+				background-color: black;
+				margin: 0 auto;
+				border-radius: 5px;
+				border-radius: 5%;
+			}
+			
+			#result
+			{
+				background-color: #eaedef;
+				height: 140px;
+				border-radius: 25%;
+			}
+			
+			#history
+			{
+				text-align: right;
+				height: 20px;
+				margin: 0 20px;
+				padding-top: 20px;
+				font-size: 15px;
+				color: #919191;
+				border-radius: 25%;
+			}
+			
+			#output
+			{
+				text-align: right;
+				height: 60px;
+				margin: 10px 20px;
+				font-size: 30px;
+				border-radius: 25%;
+			}
+			
+			#keyboard
+			{
+				height: 400px;
+				border-radius: 25%;
+			}
+
+			.number
+			{
+				width: 50px;
+				height: 50px;
+				margin: 15px;
+				float: left;
+				border-radius: 25%;
+				border-width: 0;
+				font-weight: bold;
+				font-size: 15px;
+				background-color: #FDEBD0;
+			}
+
+		
+			.operator
+			{
+				width: 50px;
+				height: 50px;
+				margin: 15px;
+				float: left;
+				border-radius: 25%;
+				border-width: 0;
+				font-weight: bold;
+				font-size: 15px;
+				background-color: #ffff00 ;
+			}
+
+			.equals
+			{
+				width: 100px;
+				height: 50px;
+				margin: 15px;
+				float: left;
+				border-radius: 25%;
+				border-width: 0;
+				font-weight: bold;
+				font-size: 15px;
+				background-color: #74ff3b;
+			}
+
+			
+			button
+			{
+				font-size: 20px;
+				background-color: #eaedef;
+			}
+		</style>
+	</head>
+	
+	
+	<body>
+		<div id="background">
+			<div id="calculator">
+				<div id="result">
+					<div id="history">
+						<p id="history-value"></p>
+					</div>
+					<div id="output">
+						<p id="output-value"></p>
+					</div>
+				</div>
+				<div id="keyboard">
+					<button class="operator"style=" background-color: #ff0000;" id="clear">C</button>
+					<button class="operator"style=" background-color: #ff0000;" id="backspace">CE</button>
+					<button class="operator" id="%">%</button>
+					<button class="operator" id="/">&#247;</button>
+					<button class="number" id="7">7</button>
+					<button class="number" id="8">8</button>
+					<button class="number" id="9">9</button>
+					<button class="operator" id="*">&times;</button>
+					<button class="number" id="4">4</button>
+					<button class="number" id="5">5</button>
+					<button class="number" id="6">6</button>
+					<button class="operator" id="-">-</button>
+					<button class="number" id="1">1</button>
+					<button class="number" id="2">2</button>
+					<button class="number" id="3">3</button>
+					<button class="operator" id="+">+</button>
+					<button class="number"style="width: 80px;" id="00">00</button>
+					<button class="number" id="0">0</button>
+					<button class="operator" id="=" style="width: 100px; background-color: #74ff3b;">=</button>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script>
+		
+			function getHistory()
+			{
+			 return document.getElementById("history-value").innerText;
+			}
+			function printHistory(num)
+			{
+				document.getElementById("history-value").innerText=num;
+			}
+			function getOutput()
+			{
+				return document.getElementById("output-value").innerText;
+			}
+			function printOutput(num)
+			{
+				if(num=="")
+				{
+					document.getElementById("output-value").innerText=num;
+				}
+				else
+				{
+					document.getElementById("output-value").innerText=getFormattedNumber(num);
+				}	
+			}
+			function getFormattedNumber(num)
+			{
+				if(num=="-")
+				{
+					return "";
+				}
+				var n = Number(num);
+				var value = n.toLocaleString("en");
+				return value;
+			}
+			function reverseNumberFormat(num){
+				return Number(num.replace(/,/g,''));
+			}
+			var operator = document.getElementsByClassName("operator");
+			for(var i =0;i<operator.length;i++)
+			{
+				operator[i].addEventListener('click',function()
+				{
+					if(this.id=="clear")
+					{
+						printHistory("");
+						printOutput("");
+					}
+					else if(this.id=="backspace")
+					{
+						var output=reverseNumberFormat(getOutput()).toString();
+						if(output)
+						{//if output has a value
+							output= output.substr(0,output.length-1);
+							printOutput(output);
+						}
+					}
+					else{
+						var output=getOutput();
+						var history=getHistory();
+						if(output==""&&history!="")
+						{
+							if(isNaN(history[history.length-1]))
+							{
+								history= history.substr(0,history.length-1);
+							}
+						}
+						if(output!="" || history!="")
+						{
+							output= output==""?output:reverseNumberFormat(output);
+							history=history+output;
+							if(this.id=="=")
+							{
+								var result=eval(history);
+								printOutput(result);
+								printHistory("");
+							}
+							else{
+								history=history+this.id;
+								printHistory(history);
+								printOutput("");
+							}
+						}
+					}
+					
+				});
+			}
+			var number = document.getElementsByClassName("number");
+			for(var i =0;i<number.length;i++)
+			{
+				number[i].addEventListener('click',function()
+				{
+					var output=reverseNumberFormat(getOutput());
+					if(output!=NaN)
+					{ //if output is a number
+						output=output+this.id;
+						printOutput(output);
+					}
+				});
+			}
+
+		</script>
+	</body>
+</html>
