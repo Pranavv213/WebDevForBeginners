@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+    <title>Crypto Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1 class="col-7 text-center mt-2"> Crypto Tracker </h1>
+            <h4 class="col-7 text-center mt-2"> By Meet Vansjaliya </h4>
+            <div class="col-md-6 row justify-content-center main fix" id="allContaint">
+                <div class="col-10">
+                    <form action="" id="searchForm">
+                        <div class="form-row">
+                            <div class="col-12 form-group">
+                                <label for="coin">
+                                    <span style="font-weight: 700;">Coin type</span>
+                                </label>
+                                <select class="form-control" name="coinType" id="coin">
+                                    <option value="btc-usd">Bitcoin - USD</option>
+                                    <option value="doge-usd">Dogecoin - USD</option>
+                                    <option value="eth-usd">Ether - USD</option>
+                                    <option value="btc-eth">Bitcoin - Ether</option>
+                                    <option value="btc-doge">Bitcoin - Doge</option>
+                                    <option value="bnb-usd">Binance - USD</option>
+                                </select>
+                            </div>
+                        </div>
+                            <button type="submit" class="col-12 btn btn-primary ">Get Price</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-7 text-center row justify-content-center align-items-center" id="result" style="margin-top:100px;">
+                <table class="p-4 col-md-7" border="1px" style="background-color: white; font-weight: 700;" id="resTable">
+                    
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HQ1J4PC1ZT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HQ1J4PC1ZT');
+</script>
+    
+</body>
+</html>
+

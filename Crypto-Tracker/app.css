@@ -1,0 +1,20 @@
+.main{
+    margin-top: 10%;
+}
+.mainClick{
+    margin-top: 2%;
+}
+body{
+    background-image: url("cr.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.fix{
+    border:2px solid #fca311;
+    border-radius: 5px;
+    background-color:#fca311 ;
+    padding: 10px;
+}
+h1,h4{
+    color:#e5e5e5;
+}
