@@ -1,0 +1,14 @@
+h1{
+    background-color: black;
+    height: 100px;
+}
+
+a{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+a:hover{
+    color: blue;
+}
