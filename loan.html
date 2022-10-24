@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+body{
+     background-image:url("loan.jpg");
+	 background-repeat:no-repeat;
+	  }
+	 
+input,button,select,textarea{
+      width:100%;
+	  }
+	  
+input[type=text]{
+       padding:12px 20px;
+       margin:80px;
+	   box-sizing:border-box;
+	   border:2px solid black;
+	   background-color:bisque;
+	   color:black;
+	   focus:background-color:lightblue;
+	   }
+input[type=number]{
+       padding:12px 20px;
+       margin:80px;
+	   box-sizing:border-box;
+	   border:2px solid black;
+	   background-color:bisque;
+	   color:black;
+	   focus:background-color:lightblue;
+	   }
+textarea{
+       padding:12px 20px;
+       margin:80px;
+	   box-sizing:border-box;
+	   border:2px solid black;
+	   background-color:bisque;
+	   color:black;
+	   focus:background-color:lightblue;
+	   }
+   
+input[type=reset]{
+       padding:12px 20px;
+       margin:80px;
+	   box-sizing:border-box;
+	   border:2px solid black;
+	   background-color:yellow;
+	   color:black;
+	   focus:background-color:lightblue;
+	   }
+select{
+       padding:12px 20px;
+       margin:80px;
+	   box-sizing:border-box;
+	   border:2px solid black;
+	   background-color:bisque;
+	   color:black;
+	   focus:background-color:red;
+	   }
+button[type=button]{
+       padding:12px 20px;
+       margin:80px;
+	   box-sizing:border-box;
+	   border:2px solid black;
+	   background-color:cream;
+	   color:black;
+	   focus:background-color:lightblue;
+	   }
+
+</style>
+</head>	   
+
+<body><center>
+
+    <h2><strong><u>BANK LOAN</u></strong></h2>
+	
+	<form><table>
+	
+	<tr><td><strong> CUSTOMER NAME:</td></tr> <tr> <td><input type="text"></strong></td></tr>
+	
+	
+	<tr><td><strong>MOBILE NO:</td> </tr> <tr> <td><input type="number"></strong></td></tr>
+
+	<tr><td><strong>EMAIL ID:</td></tr> <tr>  <td><input type="text"></strong></td></tr>
+	
+	<tr><td><strong>ADDRESS </td></tr> <tr> <td><textarea rows="2" cols="40"></textarea></strong></td></tr>
+	
+	<tr><td><strong>AGE:  </td> </tr> <tr><td><input type="number"></strong></td></tr>
+	
+	<tr><td><label for="gender"><strong>GENDER :  </strong></label></td></tr>
+  
+	<tr><td>Male<input type="radio" name="gender" id="male" value="male">
+	Female<input type="radio" name="gender" id="female" value="female">
+	Others<input type="radio" name="gender" id="others" value="others"></td><tr>
+	
+	<tr><td><strong>DATE OF BIRTH: </td>  </tr> <tr><td><input type="date"></strong></td></tr>
+
+	<tr><td><strong><label for="LOANtype">LOAN TYPE : </label></strong></td></tr> 
+	<tr><td><select>
+	<option value="home">HOME LOAN</option>
+	 <option value="vehicle">VEHICLE LOAN</option>
+	 <option value="edu">EDUCATION LOAN</option>
+	 </select></td>
+	 
+	 <tr><td><strong>LOAN AMOUNT(in Rs)</strong> </td></tr> <tr><td><input type="number"></td></tr>
+	 
+	 <tr><td><strong>LOAN TENURE</strong></td> </tr> <tr><td><input type="number"></td></tr>
+	 
+	 <tr><td><button type="button">AVAIL LOAN</button></td></tr>
+     <tr><td><input type="reset"></td></tr>
+	 
+	 </form></table>
+</body>
+</html>
