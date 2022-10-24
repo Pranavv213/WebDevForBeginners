@@ -28,6 +28,7 @@ There'll be simple tasks given to you. You need to solve those tasks and pull re
 - <a href="https://youtu.be/hdI2bqOjy3c">JavaScript Crash Course For Beginners - Traversity Media</a>
 - <a href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://getbootstrap.com/&ved=2ahUKEwiQh9mnssb6AhWq8zgGHa7QBI0QFnoECAUQAQ&usg=AOvVaw3s0qqZzEfHTiGFr9v0jCTN">The Bootstrap Framework</a>
 - <a href="https://youtu.be/Jyvffr3aCp0">Bootstrap 5 Crash Course - Web Dev Simplified</a>
+- <a href="https://developer.mozilla.org/en-US/">Official Documentation</a>
 
 
 ## Connect With Us
