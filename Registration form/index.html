@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <div class="info">
+        Name: <br><input type="text" placeholder="Name"/><br><br>
+        E-mail: <br><input type="E-mail" placeholder="E-mail id"/><br><br>
+        Age: <br><input type="number" placeholder="Age"/>
+        </div><br><br>
+        <fieldset>
+            <legend>Choose your standerd</legend>
+            <input type="radio" name="class" value="class XI"/> Class XI <br>
+            <input type="radio" name="class" value="class XII"/> Class XII 
+        </fieldset><br><br>
+        
+        <fieldset>
+            <legend>Choose your Favourite Subject</legend>
+            <input type="checkbox" value="Physics"/> Physics <br>
+            <input type="checkbox" value="Chemistry"/> Chemistry <br>
+            <input type="checkbox" value="Maths"/> Maths <br>
+            <input type="checkbox" value="Computer Science"/> Computer Science <br>
+        </fieldset>
+
+     <br><p>Feedback</p><textarea  placeholder="Feedback" rows="5" col="30">
+        </textarea>
+
+        <br><button type="submit">Submit</button>
+    </form>
+</body>
+</html>
