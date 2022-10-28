@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap');
+
+
+body{
+    background-color: rgb(95, 105, 134);
+    font-family: 'Libre Bodoni', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+}
+
+form{
+    border: 1px  black;
+    max-width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:20vh;
+    background-color: rgb(47, 63, 94);
+    color: white;
+    box-shadow: 12px 12px 2px 1px rgba(9, 9, 19, 0.096);
+    border-radius: 10px;
+}
+
+form h1{
+    color: white;
+    text-align: center;
+}
+
+div input{
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p{
+    position: relative;
+    left:20%; 
+    font-size: 30px;
+}
+
+input{
+    width: 20vw;
+    font-family: 'Libre Bodoni', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+padding: 10px;
+font-size: 19px;
+border-radius: 10px;
+}
+
+button{
+    max-width: 100px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: azure;
+    border: none;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+button:hover{
+    background-color: rgb(95, 105, 134);
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:1100px) {
+    form{
+        max-width: 100%;
+    }
+
+    p{
+        position: relative;
+        left: 4%;
+    }
+
+    input{
+        width:60vw;
+    }
+}
+ 
